@@ -1,0 +1,31 @@
+.tab {
+  width: 102px;
+  background-color: #1D2D53;
+  color: #fff;
+  height: 100%;
+}
+
+.tab.active {
+  position: fixed;
+  top: 0;
+}
+
+.tab .item {
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.tab .item.active {
+  background-color: #0F1C39;
+}
+
+.tab .item div {
+  font-size: 12px;
+}
+
+.tab .item img {
+  vertical-align: text-top;
+}
+
+

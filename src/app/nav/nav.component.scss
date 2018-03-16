@@ -1,0 +1,35 @@
+.my-nav {
+  height: 53px;
+  display: flex;
+}
+
+.my-nav > .left {
+  width: 102px;
+  padding: 8px 8px 9px;
+  position: absolute;
+  text-align: center;
+  background-color: #3492FF;
+}
+
+.my-nav > .right {
+  padding: 12px 35px;
+  padding-left: 102px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #D3DCE6;
+}
+
+.my-nav > .right > img {
+  margin-right: 10px;
+}
+
+.my-nav > .right > div {
+  margin-top: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.my-nav > .right > div:first-child {
+  text-decoration: underline;
+  color: #3492FF;
+}

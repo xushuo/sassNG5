@@ -1,0 +1,48 @@
+<div class="login">
+  <div class="header">
+    <img src="assets/img/logo.png" alt="" style="vertical-align: bottom">
+    <span>日志报警系统管理平台</span>
+  </div>
+  <div class="middleBody clearfix">
+    <div class="formData">
+      <div class="title">用户登录</div>
+      <form #form="ngForm" (ngSubmit)="form.form.valid && doLogin()" novalidate>
+        <div class="form-group">
+          <input type="text" class="form-control"
+                 [ngClass]="{'has-error': userName.valid||(userName.pristine&&!form.submitted) }" required
+                 placeholder="请输入手机号" maxlength="11"
+                 minlength="0" name="userName" #userName="ngModel" [(ngModel)]="loginUser.userName"/>
+          <span [class.hidden]="userName.valid||(userName.pristine&&!form.submitted)"
+                class="glyphicon glyphicon-exclamation-sign red" style="margin-top: 5px;margin-right: 5px"></span>
+          <span [class.hidden]="userName.valid||(userName.pristine&&!form.submitted)"
+                class="red">手机号不能为空</span>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control"
+                 [ngClass]="{'has-error': password.valid||(password.pristine&&!form.submitted) }" required
+                 placeholder="请输入密码"
+                 minlength="6" maxlength="18"
+                 name="password" #password="ngModel" [(ngModel)]="loginUser.password"/>
+          <span *ngIf="(password.errors?.required)&&!(password.pristine&&!form.submitted)"
+                class="glyphicon glyphicon-exclamation-sign red" style="margin-top: 5px;margin-right: 5px"></span>
+          <span *ngIf="(password.errors?.required)&&!(password.pristine&&!form.submitted)" class="red">密码不能为空</span>
+
+          <span *ngIf="password.errors?.pattern||password.errors?.minlength||password.errors?.maxlength"
+                class="glyphicon glyphicon-exclamation-sign red" style="margin-top: 5px;margin-right: 5px"></span>
+          <span *ngIf="password.errors?.pattern||password.errors?.minlength||password.errors?.maxlength" class="red">密码格式为6~18位字符和数字</span>
+        </div>
+        <div *ngIf="error" class="alert alert-danger">{{error}}
+        </div>
+        <button class="btn btn-blue" style="height: 40px;font-size: 16px" type="submit" [disabled]="!form.form.valid">
+          登录
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="footer">
+    <p>2016 极课大数据. All Rights Reserved.江苏曲速教育科技有限公司
+    </p>
+    <p>苏ICP备14059689号-1
+    </p>
+  </div>
+</div>
