@@ -1,0 +1,57 @@
+.login {
+  background-color: #fff;
+  height: 100%;
+  width: 1336px;
+  margin: 0 auto; }
+
+.login > .header {
+  padding: 90px 75px 25px;
+  height: 170px; }
+
+.login > .header > span {
+  color: #3B5675;
+  font-size: 30px;
+  margin-left: 20px;
+  font-weight: bold; }
+
+.login > .middleBody {
+  padding: 52px 187px 52px;
+  background: url("../../assets/img/bg_logo.png") no-repeat;
+  background-size: contain;
+  height: 426px; }
+
+.login .formData {
+  width: 316px;
+  float: right;
+  background-color: #fff;
+  padding: 25px; }
+
+.login .formData > .title {
+  font-size: 16px;
+  color: #3B5675;
+  font-weight: bold;
+  margin: 20px auto; }
+
+.login .formData .form-group {
+  margin-top: 30px;
+  margin-bottom: 0; }
+
+.login .formData form > button {
+  margin-top: 30px; }
+
+.login .formData form > .alert {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #FF6161;
+  margin-bottom: 0px; }
+
+.login > .footer {
+  text-align: center;
+  padding-top: 80px;
+  color: #000;
+  font-size: 10px; }
+
+.btn-blue {
+  width: 100%; }
+
+/*# sourceMappingURL=login.component.css.map */

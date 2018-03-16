@@ -1,0 +1,6 @@
+<div class="tab" [class.active]="tabScroll">
+  <div class="item" *ngFor="let tab of tabs"  (click)="doTab(tab)" [class.active]="tab.id==currentTab">
+    <img src="{{tab.icon}}" alt="">
+    <div>{{tab.name}}</div>
+  </div>
+</div>

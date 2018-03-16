@@ -4,5 +4,10 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  urlHead: 'webapp',
+  /*url: 'http://localhost:8080/jike-oa-webapp/'*/
+  /*  url: 'http://172.17.35.92:9090/jike-oa-webapp/'*/
+  /*  url: 'http://192.168.31.141:8080/jikeoa/'*/
+  url: 'jike_monitor/'
 };
